@@ -9,132 +9,170 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
        
     <style>
-       body {
-        background-color: rgb(8, 2, 52);
-        padding: 20px;
-  font-family: "Bree Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-
-header {
-        color: rgb(198, 58, 58);
-        background-color: rgb(252, 246, 228);
-        text-align: center;
-        font-size: 30px;
-    }
-
-    footer {
-        background-color: rgb(23, 57, 82);
-        color: white;
-        border: solid darkblue 2px;
-        margin: 40px;
-        padding: 30px;
-        font-size: xx-large;
-    }
-    ul li {
-        text-align: center;
-        list-style: none;
-    }
-
-    p {
-        text-align: center;
-    }
-
-        .cards {
-            background-color: #ffffff;
-            display: grid;
-            max-width: 800px;
-            /* auto-fill creates as many columns or rows as it can, even if they're empty, while auto-fit expands existing columns or rows to fill the avaliable space, even if it means creating fewer columns or rows */
-            grid-template-columns: (1fr, 1fr, 1fr);
-            background-color: rgb(252, 246, 228);
-        color: rgb(198, 58, 58);
-        font-size: x-large;
-            
-
-            margin: 2em auto;
-        }
-
-        .card {
-            display: grid;
-            grid-template-rows: max-content 400px 1fr;
-            border: 1px solid #625e5e;
-            border-radius: 3px;
-        }
-
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .card h2 {
-            margin: 0;
-            padding: 0.5rem;
-        }
-
-        .card .content {
-            padding: 0.5rem;
-            text-align: center;
-            list-style: none;
-        }
-
-        .card footer {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem;
-        }
-        
-
-        .container1 {
-	display: grid;
-	width: 90vw; /* Grid container will span 90% of the width of the viewport */
-	/* Center the container DIV horizontally across the page */
-	margin: 0 auto;
-	/* You can only use the new fr (fractional) unit with CSS Grid */
-	grid-template-columns: repeat(4, 1fr);
-	gap: 10px;
-	/* Center the buttons horizontally in the container DIV */
-	justify-content: center;
-    padding: 20px;
-}
-.button {
-        background-color: rgb(23, 57, 82);
-        border: none;
-        color:white;
-        padding: 10px 20px;
-
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 40px;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-    
-    .responsive {
-        width: 100%;
-        height: auto;
-      }
-    
-    .button:hover {
-        background-color: darkblue;
-    }
-
-
-        @media (width < 550px ) {
-
-            .cards {
-                margin: 1em 2em;
-            }
-        }
-        
-    </style>
+        body {
+         background-color: rgb(8, 2, 52);
+         padding: 20px;
+   font-family: "Bree Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+   text-align: center;
+ }
+ 
+ header {
+         color: rgb(198, 58, 58);
+         background-color: rgb(252, 246, 228);
+         text-align: center;
+         font-size: 30px;
+     }
+ 
+     .image-container {
+         margin: 0;
+         padding: 0;
+         border: solid rgb(8, 2, 52) 8px;
+         background: rgb(23, 57, 82) url(Majorville\ Summer\ Solstice\ Logo.png);
+         background-size: 60%;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center;
+         color: black;
+     }
+ 
+     .overlay-text {
+         text-align: center;
+         /*padding: 250px;*/
+         padding: 14rem;
+         /*margin: 200px;*/
+         margin: 18rem;
+         background-color:rgba(230, 58, 58, 0.797);
+         border: solid rgb(8, 2, 52) 6px;
+         font-family: "Bree Serif", serif;
+     }
+ 
+     h1 {
+         font-size: 70px;
+         color:whitesmoke
+     }
+ 
+     footer {
+         background-color: rgb(23, 57, 82);
+         color: white;
+         border: solid darkblue 2px;
+         margin: 40px;
+         padding: 30px;
+         font-size: xx-large;
+     }
+     ul li {
+         text-align: center;
+         list-style: none;
+     }
+ 
+     p {
+         text-align: center;
+     }
+ 
+         .cards {
+             background-color: #ffffff;
+             display: grid;
+             max-width: 800px;
+             /* auto-fill creates as many columns or rows as it can, even if they're empty, while auto-fit expands existing columns or rows to fill the avaliable space, even if it means creating fewer columns or rows */
+             grid-template-columns: (1fr, 1fr, 1fr);
+             background-color: rgb(252, 246, 228);
+         color: rgb(198, 58, 58);
+         font-size: x-large;
+             
+ 
+             margin: 2em auto;
+         }
+ 
+         .card {
+             display: grid;
+             grid-template-rows: max-content 400px 1fr;
+             border: 1px solid #625e5e;
+             border-radius: 3px;
+         }
+ 
+         .card img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+         }
+ 
+         .card h2 {
+             margin: 0;
+             padding: 0.5rem;
+         }
+ 
+         .card .content {
+             padding: 0.5rem;
+             text-align: center;
+             list-style: none;
+         }
+ 
+         .card footer {
+             background-color: #333;
+             color: #fff;
+             padding: 0.5rem;
+         }
+         
+ 
+         .container1 {
+     display: grid;
+     width: 90vw; /* Grid container will span 90% of the width of the viewport */
+     /* Center the container DIV horizontally across the page */
+     margin: 0 auto;
+     /* You can only use the new fr (fractional) unit with CSS Grid */
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+     /* Center the buttons horizontally in the container DIV */
+     justify-content: center;
+     padding: 20px;
+ }
+ .button {
+         background-color: rgb(23, 57, 82);
+         border: none;
+         color:white;
+         padding: 10px 20px;
+ 
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 40px;
+         cursor: pointer;
+         border-radius: 5px;
+     }
+     
+     .responsive {
+         width: 100%;
+         height: auto;
+       }
+     
+     .button:hover {
+         background-color: darkblue;
+     }
+ 
+     @media (width >= 600px) and (width <= 1450px) {
+                 .cards {
+                 margin: 1em 2em;
+             }
+         .overlay-text {
+             font-size: 14px;
+             text-align: center;
+             /*padding: 150px;*/
+             /*margin: 100px;*/
+             padding: 9rem;
+             margin: 6.25rem;
+             background-color:rgba(86, 151, 190, 0.7);
+             border: solid rgb(252, 246, 228) 5px;
+         }
+         </style>
 </head>
 
 <body>
-    <header class="header"><h1>MAJORVILLE SUMMER SOLSTICE FESTIVAL<img src="Majorville Summer Solstice Logo.png" alt="Logo For Majorville Summer Solstice Festival" class="responsive"></header>
+    <div class="image-container">
+        <div class="overlay-text">
+        <h1>MAJORVILLE&apos;S SUMMER SOLSTICE FESTIVAL</h1>
+</div>
+    </div>
         <div class="container1">
             <a href="index.html" class="button">Home</a>
             <a href="history.html" class="button">History</a>
@@ -183,7 +221,7 @@ header {
             <br><br><br><br>
             <img src="activities.jpg" alt="A Picture Of An Old Sawmill">
             <div class="content">
-                <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/7671700@N08/5696866487">Festival Activites</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/7671700@N08">Doug Hay</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0></a>. </p>
+                <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/7671700@N08/5696866487">Festival Activites</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/7671700@N08">Doug Hay</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0</a>. </p>
             </div>
         </article>
 

@@ -25,6 +25,34 @@ header {
         font-size: 30px;
     }
 
+    .image-container {
+        margin: 0;
+        padding: 0;
+        border: solid rgb(8, 2, 52) 8px;
+        background: rgb(23, 57, 82) url(Majorville\ Summer\ Solstice\ Logo.png);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: black;
+    }
+
+    .overlay-text {
+        text-align: center;
+        /*padding: 250px;*/
+        padding: 14rem;
+        /*margin: 200px;*/
+        margin: 18rem;
+        background-color:rgba(230, 58, 58, 0.797);
+        border: solid rgb(8, 2, 52) 6px;
+        font-family: "Bree Serif", serif;
+    }
+
+    h1 {
+        font-size: 70px;
+        color:whitesmoke
+    }
+
 
     footer {
         background-color: rgb(23, 57, 82);
@@ -116,18 +144,32 @@ header {
         background-color: darkblue;
     }
 
-        @media (width < 550px ) {
-
-            .cards {
+            @media (width >= 600px) and (width <= 1450px) {
+                .cards {
                 margin: 1em 2em;
             }
+        .overlay-text {
+            font-size: 14px;
+            text-align: center;
+            /*padding: 150px;*/
+            /*margin: 100px;*/
+            padding: 9rem;
+            margin: 6.25rem;
+            background-color:rgba(86, 151, 190, 0.7);
+            border: solid rgb(252, 246, 228) 5px;
+        }
+            
         }
         
     </style>
 </head>
 
 <body>
-    <header class="header"><h1>MAJORVILLE SUMMER SOLSTICE FESTIVAL<img src="Majorville Summer Solstice Logo.png" alt="Logo For Majorville Summer Solstice Festival" class="responsive"></header>
+    <div class="image-container">
+        <div class="overlay-text">
+        <h1>MAJORVILLE&apos;S SUMMER SOLSTICE FESTIVAL</h1>
+</div>
+    </div>
         <div class="container1">
             <a href="index.html" class="button">Home</a>
             <a href="history.html" class="button">History</a>
