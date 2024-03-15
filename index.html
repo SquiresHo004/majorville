@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majorville Summer Solstice Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>:root {
+        color: rgb(198, 58, 58);
+        color: rgb(61, 61, 127);
+        color: rgb(8, 2, 52);
+        color: rgb(23, 57, 82);
+        color: black;
+        color: white;
+        color: rgb(252, 246, 228);
+    }
+    
+    .container1 {
+	display: grid;
+	width: 90vw; /* Grid container will span 90% of the width of the viewport */
+	/* Center the container DIV horizontally across the page */
+	margin: 0 auto;
+	/* You can only use the new fr (fractional) unit with CSS Grid */
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	/* Center the buttons horizontally in the container DIV */
+	justify-content: center;
+    padding: 20px;
+}
+    .button {
+    background-color: #154f8b;
+    border: none;
+    color: rgb(198, 58, 58);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(61, 61, 127);
+}
+
+body {
+    background-color: rgb(252, 246, 228);
+    font-family: "Bree Serif", serif;
+}
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(86, 151, 190);
+        color: black;
+        padding: 2px;
+        text-align: center;
+        border: solid rgb(8, 2, 52) 4px;
+        } 
+
+    header:hover {
+        color: rgb(252, 246, 228);
+    }
+
+    .image-container {
+        margin: 0;
+        padding: 0;
+        border: solid rgb(8, 2, 52) 8px;
+        background: rgb(23, 57, 82) url(Majorville\ Summer\ Solstice\ Logo.png);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: black;
+    }
+
+    .overlay-text {
+        text-align: center;
+        /*padding: 250px;*/
+        padding: 14rem;
+        /*margin: 200px;*/
+        margin: 18rem;
+        background-color:rgba(230, 58, 58, 0.797);
+        border: solid rgb(8, 2, 52) 6px;
+        font-family: "Bree Serif", serif;
+    }
+
+    h1 {
+        font-size: 70px;
+        color:whitesmoke
+    }
+
+    h2 {
+        color:  rgb(198, 58, 58);
+        font-size: 60px;
+    }
+
+    nav {
+        margin: 10px;
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    article {
+        float: right;
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+
+    aside {
+        float: down;
+        width: 35%;
+    }
+
+    ul li {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .container2 {
+        background-color: rgb(23, 57, 82);
+        color: white;
+        border: solid darkblue 2px;
+        margin: 40px;
+        padding: 30px;
+        font-size: x-large;
+    }
+
+    .container3 {
+        justify-content: right;
+    }
+
+    footer {
+        background-color: rgb(23, 57, 82);
+        color: white;
+        border: solid darkblue 2px;
+        margin: 40px;
+        padding: 30px;
+        font-size: xx-large;
+    }
+
+    .button {
+        background-color: rgb(23, 57, 82);
+        border: none;
+        color:white;
+        padding: 10px 20px;
+
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    
+    .button:hover {
+        background-color: darkblue;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+      }
+
+      .attribution {
+        color: rgb(198, 58, 58);
+      }
+    
+    @media (width >= 600px) and (width <= 1000px) {
+        .overlay-text {
+            font-size: 14px;
+            text-align: center;
+            /*padding: 150px;*/
+            /*margin: 100px;*/
+            padding: 9rem;
+            margin: 6.25rem;
+            background-color:rgba(86, 151, 190, 0.7);
+            border: solid rgb(252, 246, 228) 5px;
+        }
+       /* .article {
+            padding: 9rem;
+            margin: 6.25rem;
+            background-color:rgba(86, 151, 190, 0.7);
+            border: solid rgb(245, 232, 212) 5px;
+        }*/
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="overlay-text">
+        <h1>MAJORVILLE&apos;S SUMMER SOLSTICE FESTIVAL</h1>
+</div>
+    </div>
+
+    <div class="container1">
+        <a href="index.html" class="button">Home</a>
+        <a href="history.html" class="button">History</a>
+        <a href="sawmill.html" class="button">Sawmill</a>
+        <a href="extra.html" class="button">Activities & Info</a>
+    </div>    
+
+
+<div class="container2">
+<div class="content-sm-a">
+    <div class="container3">
+        <img src="logrollinglumberjacks.jpg" alt="Photo Of Lumberjacks Rolling Logs">
+        <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/26786061@N00/3580545062">Log rolling lumberjacks</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/26786061@N00">kcxd</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0 </a>
+    </div>
+<main>
+
+
+    <h2>About</h2>
+    <p>Gather your family and friends to celebrate the summer solstice for a day of fun at Majorville&apos;s Woodward Farm to celebrate the 150th anniversary of the founding of Majorville!</p>
+
+    <ul>
+        <li>Who: Chamber of Commerce in Majorville, Michigan</li>
+        <li>What: Summer Solstice Festival</li>
+        <li>Where: Woodward Farm in Majorville, MI</li>
+        <li>When: Thursday, June 20, 2024 from 11am-10pm</li>
+    </ul>
+
+<p>Our theme this year is lumberjacks. Our town traces its history back to the early days of lumbering in Michigan. Majorville is located on Lake Michigan, in the 1870s and 1880s, Majorville was a booming lumber town!</p>
+</main>
+</div>
+</div>
+
+<footer>
+   <p>Copyright &copy; 2024 by Hope Squires</p>
+</footer>
+
+</body>
+</html>

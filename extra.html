@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majorville Summer Solstice Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+       
+    <style>
+       body {
+        background-color: rgb(8, 2, 52);
+        padding: 20px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+header {
+        color: rgb(198, 58, 58);
+        background-color: rgb(252, 246, 228);
+        text-align: center;
+        font-size: 30px;
+    }
+
+    footer {
+        background-color: rgb(23, 57, 82);
+        color: white;
+        border: solid darkblue 2px;
+        margin: 40px;
+        padding: 30px;
+        font-size: xx-large;
+    }
+    ul li {
+        text-align: center;
+        list-style: none;
+    }
+
+    p {
+        text-align: center;
+    }
+
+        .cards {
+            background-color: #ffffff;
+            display: grid;
+            max-width: 800px;
+            /* auto-fill creates as many columns or rows as it can, even if they're empty, while auto-fit expands existing columns or rows to fill the avaliable space, even if it means creating fewer columns or rows */
+            grid-template-columns: (1fr, 1fr, 1fr);
+            background-color: rgb(252, 246, 228);
+        color: rgb(198, 58, 58);
+        font-size: x-large;
+            
+
+            margin: 2em auto;
+        }
+
+        .card {
+            display: grid;
+            grid-template-rows: max-content 400px 1fr;
+            border: 1px solid #625e5e;
+            border-radius: 3px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            margin: 0;
+            padding: 0.5rem;
+        }
+
+        .card .content {
+            padding: 0.5rem;
+            text-align: center;
+            list-style: none;
+        }
+
+        .card footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        
+
+        .container1 {
+	display: grid;
+	width: 90vw; /* Grid container will span 90% of the width of the viewport */
+	/* Center the container DIV horizontally across the page */
+	margin: 0 auto;
+	/* You can only use the new fr (fractional) unit with CSS Grid */
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	/* Center the buttons horizontally in the container DIV */
+	justify-content: center;
+    padding: 20px;
+}
+.button {
+        background-color: rgb(23, 57, 82);
+        border: none;
+        color:white;
+        padding: 10px 20px;
+
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .responsive {
+        width: 100%;
+        height: auto;
+      }
+    
+    .button:hover {
+        background-color: darkblue;
+    }
+
+
+        @media (width < 550px ) {
+
+            .cards {
+                margin: 1em 2em;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header"><h1>MAJORVILLE SUMMER SOLSTICE FESTIVAL<img src="Majorville Summer Solstice Logo.png" alt="Logo For Majorville Summer Solstice Festival" class="responsive"></header>
+        <div class="container1">
+            <a href="index.html" class="button">Home</a>
+            <a href="history.html" class="button">History</a>
+            <a href="sawmill.html" class="button">Sawmill</a>
+            <a href="extra.html" class="button">Activities & Info</a>
+        </div>    
+
+    <div class="cards">
+        <article class="card">
+            <div class="content">
+                <br>
+                <h2>Activities & Additonal Information</h2>
+                <br>
+                <p>  Activities:
+                    <ul><li>Live Music by Breathe Owl Breathe</li>
+                    <li>Wagon Rides</li>
+                    <li>Flower Crown making</li>
+                    <li>Flower press</li><br><br>
+                    Games: 
+                    <li>Crafts</li>
+                    <li>Sack Races</li>
+                    <li>Scavenger Hunt</li>
+                    <li>Bonfire with S&apos;mores</li>
+                    <li>U-Pick Strawberries</li>
+                    <li>Children&apos;s and pet&apos;s costume contest</li>
+                    <li>Outdoor yoga</li>
+                    <li>Farm animal petting zoo (goats, sheep, pony, rabbits)</li>
+                    <li>Baseball demonstrations by the Majorville Lumberjacks</li>
+                    <li>Lumberjack Competitions: chopping, sawing, and speed pole climbing</li>
+                    <li>Blacksmithing demonstration by Dan Nickels</li></ul>
+                    <br><br>
+                    Enjoy lemonade , lemonade slushies, ice cream, and other goodies from our local vendors. We will also have food trucks on-site for you to enjoy during our celebration.
+                    <br><br>
+                    Food Trucks: Pigs Eatin&apos; Ribs,  Daily Blend, Good on Wheels, TC Pizza Company, and more!<br><br>
+                    Links:
+                    Pigs Eatin&apos; Ribs: <a href="//www.pigseatinribs.com/food-truck">www.pigseatinribs.com/food-truck</a><br>
+                    Daily Blend: <a href="http://dailyblendtc.com/">http://dailyblendtc.com/</a><br>
+                    Good on Wheels : <a href="https://mynorth.com/at_biz_dir/good-on-wheels/">https://mynorth.com/at_biz_dir/good-on-wheels/</a><br>
+                    TC Pizza Company: <a href="https://traversecitypizzaco.com/">https://traversecitypizzaco.com/</a><br><br><br><br><br>
+                    Additional information can be found below!
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <br><br><br><br>
+            <img src="activities.jpg" alt="A Picture Of An Old Sawmill">
+            <div class="content">
+                <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/7671700@N08/5696866487">Festival Activites</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/7671700@N08">Doug Hay</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0></a>. </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="content">
+                <br>
+                <h2>Additional Information</h2>
+                <br>
+                <p>Additional Information:
+                This is a festival designed to highlight our town and what it has to offer the general public, so costumes are encouraged! The local baseball team, the Majorville Lumberjacks, will host an exhibition game!
+                </p>
+            </div>
+        </article>
+
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 by Hope Squires</p>
+     </footer>
+</body>
+</html>

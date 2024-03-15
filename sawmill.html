@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majorville Summer Solstice Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+       
+    <style>
+       body {
+        background-color: rgb(8, 2, 52);
+        padding: 20px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+header {
+        color: rgb(198, 58, 58);
+        background-color: rgb(252, 246, 228);
+        text-align: center;
+        font-size: 30px;
+    }
+
+    header img {
+        width: 30%;
+        height: 30%;
+    }
+
+    footer {
+        background-color: rgb(23, 57, 82);
+        color: white;
+        border: solid darkblue 2px;
+        margin: 40px;
+        padding: 30px;
+        font-size: xx-large;
+    }
+
+
+        .cards {
+            background-color: #ffffff;
+            display: grid;
+            max-width: 800px;
+            /* auto-fill creates as many columns or rows as it can, even if they're empty, while auto-fit expands existing columns or rows to fill the avaliable space, even if it means creating fewer columns or rows */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            background-color: rgb(252, 246, 228);
+        color: rgb(198, 58, 58);
+        font-size: x-large;
+            
+
+            margin: 2em auto;
+        }
+
+        .card {
+            display: grid;
+            grid-template-rows: max-content 400px 1fr;
+            border: 1px solid #625e5e;
+            border-radius: 3px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            margin: 0;
+            padding: 0.5rem;
+        }
+
+        .card .content {
+            padding: 0.5rem;
+        }
+
+        .card footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        
+
+        .container1 {
+	display: grid;
+	width: 90vw; /* Grid container will span 90% of the width of the viewport */
+	/* Center the container DIV horizontally across the page */
+	margin: 0 auto;
+	/* You can only use the new fr (fractional) unit with CSS Grid */
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	/* Center the buttons horizontally in the container DIV */
+	justify-content: center;
+    padding: 20px;
+}
+.button {
+        background-color: rgb(23, 57, 82);
+        border: none;
+        color:white;
+        padding: 10px 20px;
+
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .responsive {
+        width: 100%;
+        height: auto;
+      }
+    
+    .button:hover {
+        background-color: darkblue;
+    }
+
+        @media (width < 550px ) {
+
+            .cards {
+                margin: 1em 2em;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header"><h1>MAJORVILLE SUMMER SOLSTICE FESTIVAL<img src="Majorville Summer Solstice Logo.png" alt="Logo For Majorville Summer Solstice Festival" class="responsive"></header>
+        <div class="container1">
+            <a href="index.html" class="button">Home</a>
+            <a href="history.html" class="button">History</a>
+            <a href="sawmill.html" class="button">Sawmill</a>
+            <a href="extra.html" class="button">Activities & Info</a>
+        </div>    
+
+    <div class="cards">
+        <article class="card">
+            <br><br><br><br>
+            <img src="sawmill.jpg" alt="A Picture Of An Old Sawmill">
+            <div class="content">
+                <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/22490717@N02/2901744684">DSC_5690 - McDonald Bros. Sawmill</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/22490717@N02">archer10 (Dennis)</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse">CC BY-SA 2.0</a>. </p>
+
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="content">
+                <br>
+                <h2>Operation Sawmill</h2>
+                <br>
+                <p>Dr. Arthur O&apos;Leary recognized the financial potential of the timber stands around Pine Creek. He began buying up large tracts of forest and made plans to build a sawmill.
+                    <br><br>
+                    Charles Wright would become the manager of the lumber operation at Pine Creek. 
+
+                    In 1865, Daniel Thomas and William Woodward built a dock on John Major&apos;s property on Lake Michigan
+                    
+                    The sawmill was built on the south side of Pine Creek not far from Lake Michigan. It was a 2-story wood building typical of sawmills of that time. 
+                    
+                    The creek was dammed to create a mill pond right in front of the sawmill. 
+                    <br><br>Mill operation began in 1869 for the purpose of producing white pine lumber, and the town of Majorville was established.
+                </p>
+            </div>
+        </article>
+
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 by Hope Squires</p>
+     </footer>
+</body>
+</html>

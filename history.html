@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majorville Summer Solstice Festival</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+   
+    <style>
+       body {
+        background-color: rgb(8, 2, 52);
+        padding: 20px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+header {
+        color: rgb(198, 58, 58);
+        background-color: rgb(252, 246, 228);
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+    footer {
+        background-color: rgb(23, 57, 82);
+        color: white;
+        border: solid darkblue 2px;
+        margin: 40px;
+        padding: 30px;
+        font-size: xx-large;
+    }
+
+
+        .cards {
+            background-color: #ffffff;
+            display: grid;
+            max-width: 800px;
+            /* auto-fill creates as many columns or rows as it can, even if they're empty, while auto-fit expands existing columns or rows to fill the avaliable space, even if it means creating fewer columns or rows */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            background-color: rgb(252, 246, 228);
+        color: rgb(198, 58, 58);
+        font-size: x-large;
+            
+
+            margin: 2em auto;
+        }
+
+        .card {
+            display: grid;
+            grid-template-rows: max-content 400px 1fr;
+            border: 1px solid #625e5e;
+            border-radius: 3px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            margin: 0;
+            padding: 0.5rem;
+        }
+
+        .card .content {
+            padding: 0.5rem;
+        }
+
+        .card footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        
+
+        .container1 {
+	display: grid;
+	width: 90vw; /* Grid container will span 90% of the width of the viewport */
+	/* Center the container DIV horizontally across the page */
+	margin: 0 auto;
+	/* You can only use the new fr (fractional) unit with CSS Grid */
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	/* Center the buttons horizontally in the container DIV */
+	justify-content: center;
+    padding: 20px;
+}
+
+.responsive {
+        width: 100%;
+        height: auto;
+      }
+
+.button {
+        background-color: rgb(23, 57, 82);
+        border: none;
+        color:white;
+        padding: 10px 20px;
+
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    
+    .button:hover {
+        background-color: darkblue;
+    }
+
+        @media (width < 550px ) {
+
+            .cards {
+                margin: 1em 2em;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header"><h1>MAJORVILLE SUMMER SOLSTICE FESTIVAL<img src="Majorville Summer Solstice Logo.png" alt="Logo For Majorville Summer Solstice Festival" class="responsive"></header>
+        <div class="container1">
+            <a href="index.html" class="button">Home</a>
+            <a href="history.html" class="button">History</a>
+            <a href="sawmill.html" class="button">Sawmill</a>
+            <a href="extra.html" class="button">Activities & Info</a>
+        </div>    
+
+    <div class="cards">
+        <article class="card">
+            <div class="content">
+                <br>
+                <h2>Major's History</h2>
+                <br>
+                <p>John Major settled with his wife Julia and daughter Anna in Northern Michigan. He began buying land in Platte and Lake townships as investments and, in late 1854, purchased the 122 acres.Major cleared 20 acres and built a log cabin for his family to live in.
+                    <br> <br> Lumber speculators soon arrived looking for stands of white pine. Most of the forest in this area was hardwood, but there were some stands of white pine inland from Pine Lake. Lumber speculators were on their way north as the forests near Grand Haven and Muskegon were harvested.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <br><br><br><br>
+            <img src="logcabin.jpg" alt="A Picture Of An Old Log Cabin">
+            <div class="content">
+                <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/14913305@N00/16265840943">Historic Log Cabin on Bennett Lake</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/14913305@N00">Chris Hunkeler</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse">CC BY-SA 2.0</a>. </p>
+            </div>
+        </article>
+
+    </div>
+    <footer>
+        <p>Copyright &copy; 2024 by Hope Squires</p>
+     </footer>
+</body>
+</html>
